@@ -7,7 +7,7 @@ maintainer:    libraries@haskell.org
 bug-reports:   https://github.com/haskell/process/issues
 synopsis:      Process libraries
 category:      System
-build-type:    Configure
+build-type:    Simple
 cabal-version: >=1.10
 description:
     This package contains libraries for dealing with system processes.
@@ -17,17 +17,6 @@ description:
     support, easier concurrency, and a more composable API. You can
     read more about it at
     <https://github.com/fpco/typed-process/#readme>.
-
-extra-source-files:
-    aclocal.m4
-    changelog.md
-    configure
-    configure.ac
-    include/HsProcessConfig.h.in
-    process.buildinfo
-    exes/echo.bat
-    exes/subdir/echo.bat
-    cbits/posix/common.h
 
 extra-tmp-files:
     autom4te.cache
