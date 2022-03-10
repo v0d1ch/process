@@ -568,7 +568,8 @@ readCreateProcessWithExitCode cp input = do
       \mb_inh mb_outh mb_errh ph ->
         case (mb_inh, mb_outh, mb_errh) of
           (Just inh, Just outh, Just errh) -> do
-
+            hSetEncoding outh utf8
+            hSetEncoding errh utf8
             out <- hGetContents outh
             err <- hGetContents errh
 
